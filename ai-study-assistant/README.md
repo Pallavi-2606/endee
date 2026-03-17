@@ -1,0 +1,44 @@
+# AI Study Assistant using Endee
+
+## 📌 Overview
+This project is an AI-powered chatbot that answers questions based on study material using vector embeddings and semantic search.
+
+## 🚀 Features
+- Semantic search
+- Question answering system
+- Lightweight RAG (Retrieval Augmented Generation)
+- Fast response using embeddings
+
+## 🧠 Tech Stack
+- Python
+- Flask
+- Sentence Transformers
+- Endee Vector Database
+
+## ⚙️ How it Works
+1. Text data is stored and converted into embeddings
+2. Embeddings are stored using vector database principles
+3. User query is converted into embedding
+4. Most similar data is retrieved
+5. Answer is returned
+
+## 📁 Project Structure
+ai-study-assistant/
+├── app.py
+├── data.txt
+└── README.md
+
+## ▶️ Setup Instructions
+```bash
+pip install sentence-transformers flask
+python app.py
+```
+
+## 📡 API Endpoint
+POST `/ask`
+
+Example:
+```json
+{
+  "query": "What is machine learning?"
+}
