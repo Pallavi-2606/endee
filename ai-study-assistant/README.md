@@ -47,7 +47,10 @@ Example:
 This project includes a simple web-based chat interface where users can ask questions interactively.
 
 Open in browser:
-http://127.0.0.1:5000/
+http://127.0.0.1:5000
+
+## 📸 Output Screenshot
+![Output](screenshot.png)
 
 ## 📄 PDF Upload Feature
 Users can upload PDF documents, and the system will extract text and answer questions based on the uploaded content.
