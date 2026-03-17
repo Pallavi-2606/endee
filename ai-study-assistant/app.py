@@ -10,7 +10,7 @@ app = Flask(__name__, static_folder=".")
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Load initial data
-with open("ai-study-assistant/data.txt", "r") as f:
+with open("data.txt", "r") as f:
     documents = f.readlines()
 
 # Create embeddings
@@ -44,7 +44,7 @@ def load_pdf(file_path):
 # 🌐 Home route (UI)
 @app.route("/")
 def home():
-    return send_from_directory("ai-study-assistant", "index.html")
+    return send_from_directory(".", "index.html")
 
 
 # 🤖 Ask API
@@ -60,7 +60,7 @@ def ask():
 def upload():
     file = request.files["file"]
 
-    file_path = os.path.join("ai-study-assistant", file.filename)
+    file_path = file.filename
     file.save(file_path)
 
     global documents, doc_embeddings
