@@ -36,9 +36,15 @@ python app.py
 
 ## 📡 API Endpoint
 POST `/ask`
-
 Example:
 ```json
 {
   "query": "What is machine learning?"
 }
+```
+
+## 🌐 Web Interface
+This project includes a simple web-based chat interface where users can ask questions interactively.
+
+Open in browser:
+http://127.0.0.1:5000/
